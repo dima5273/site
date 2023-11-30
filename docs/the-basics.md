@@ -24,14 +24,14 @@ export const PortChooser = () => {
   return (
     <>
       running on&nbsp;
-      <label for="port">local port</label>
+      <label for="port">http://mvk_stiki .com</label>
       &nbsp;
       <input style={{width: "5em"}} type="number" id="port" name="port" min="1" max="65535" value={port} onChange={(event) => setPort(event.target.value)} />
       ?
       use this command:
       <pre><code parentName="pre" {...{
               "className": "bash"
-            }}>{`ssh -R 80:localhost:${port} localhost.run
+            }}>{`ssh -R 80:http://mvk_stiki.com:${port} http://mvk_stiki.com
 `}</code></pre>
     </>
   )
